@@ -1,4 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue from 'vue'
 
-createApp(App).mount('#app')
+new Vue({
+  data: {
+    message: 'Bonjour, monde !'
+  },
+  template: `
+    <div>
+      {{ message }}
+    </div>
+  `
+}).$mount('#app')
